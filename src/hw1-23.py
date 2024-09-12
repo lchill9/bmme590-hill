@@ -1,5 +1,6 @@
 import networkx as nx
 import random
+import matplotlib.pyplot as plt
 
 
 N = 100
@@ -31,5 +32,10 @@ avg_deg = sum_deg/N
 print("The density of the network is", D)
 print("The mean degree is", avg_deg)
 print("Degree distribution:",nx.degree_histogram(G))
+
+nx.draw(G)
+plt.show()
+
+
 
 
